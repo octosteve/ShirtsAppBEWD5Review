@@ -4,6 +4,8 @@
   <%= text_field_tag 'q' %>
   <%= submit_tag %>
 <% end %>
+
+<%= link_to "Add new shirt", new_shirt_path %>
 <% @shirts.each do |shirt| %>
   <h2><%= shirt.name %></h2>
   <p><%= shirt.description %></p>
